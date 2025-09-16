@@ -115,12 +115,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({
-                            message: `Nouveau client 📲
-                            Numéro: ${number}
-                            Opérateur: ${provider}
-                            Service: ${serviceChoisi}
-                            Montant: ${montantSaisi} FCFA`
-                        })
+                        telephone: number,
+                        operateur: provider,
+                        forfait: serviceChoisi,
+                        montant: montantSaisi,
+                        service: serviceChoisi
+})
+
                     })
                         .then(res => res.json())
                         .then(data => {
@@ -139,3 +140,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
