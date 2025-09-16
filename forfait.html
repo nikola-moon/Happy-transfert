@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Happy Transfert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans min-h-screen flex flex-col">
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-10 bg-slate-50/80 p-4 backdrop-blur-sm flex items-center">
+    <a href="index.html" class="material-symbols-outlined text-2xl text-slate-600">arrow_back_ios_new</a>
+    <h1 class="flex-1 text-center text-lg font-bold text-slate-800">Type de Souscription</h1>
+    <div class="w-6"></div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow p-4">
+    <h2 class="mb-6 text-2xl font-bold text-slate-900">Choisissez votre forfait</h2>
+
+    <!-- Options -->
+    <div class="grid gap-4 sm:grid-cols-2">
+      <!-- Appels -->
+      <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm cursor-pointer has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50">
+        <input type="radio" name="forfait" value="appels" class="hidden peer"/>
+        <span class="material-symbols-outlined text-blue-600">call</span>
+        <span class="font-semibold text-slate-800">Appels</span>
+        
+      </label>
+
+      <!-- SMS -->
+      <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm cursor-pointer has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50">
+        <input type="radio" name="forfait" value="sms" class="hidden peer"/>
+        <span class="material-symbols-outlined text-blue-600">sms</span>
+        <span class="font-semibold text-slate-800">SMS</span>
+      </label>
+
+      <!-- Internet -->
+      <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm cursor-pointer has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50">
+        <input type="radio" name="forfait" value="internet" class="hidden peer"/>
+        <span class="material-symbols-outlined text-blue-600">wifi</span>
+        <span class="font-semibold text-slate-800">Internet</span>
+      </label>
+
+      <!-- Transfert direct -->
+      <label class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm cursor-pointer has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50">
+        <input type="radio" name="forfait" value="transfert" class="hidden peer"/>
+        <span class="material-symbols-outlined text-blue-600">account_balance_wallet</span>
+        <span class="font-semibold text-slate-800">Transfert direct</span>
+      </label>
+    </div>
+
+    <!-- Montant -->
+    <div id="montantBox" class="mt-6 hidden">
+      <label class="block mb-2 font-medium text-slate-700">Montant</label>
+      <input type="number" id="montant" class="w-full rounded-lg border border-slate-300 p-3 focus:ring-2 focus:ring-blue-500" placeholder="Ex: 1000"/>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="sticky bottom-0 bg-slate-50 p-4">
+    <button id="nextBtn" class="w-full rounded-xl bg-blue-600 py-3 font-bold text-white shadow-md hover:bg-blue-700 active:scale-95 transition">
+      Suivant
+    </button>
+  </footer>
+  <script src="code.js"></script>
+</body>
+</html>

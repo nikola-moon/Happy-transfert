@@ -1,0 +1,73 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Happy transfere</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+
+
+<body class="bg-white">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex flex-col">
+<header class="flex items-center p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600">
+<span class="material-symbols-outlined"><a href="home.html">arrow_back </a></span>
+</button>
+
+
+<h1 class="flex-1 text-center text-xl font-bold text-slate-800 pr-10">Choisir l'opérateur pour votre forfait</h1>
+</header>
+<main class="flex flex-col gap-4 p-4">
+<div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+<label class="flex items-center justify-between">
+<span class="text-base font-medium text-slate-700"id="MTN_operateur">MTN</span>
+<input class="h-6 w-6 appearance-none rounded-full border-2 border-slate-300 bg-white checked:border-[#137fec] checked:bg-[#137fec] checked:bg-[image:--checkbox-tick-svg] focus:outline-none focus:ring-2 focus:ring-[#137fec]/50" type="checkbox"/>
+</label>
+</div>
+
+<div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+<label class="flex items-center justify-between">
+<span class="text-base font-medium text-slate-700"id="orange_operateur">Orange</span>
+<input class="h-6 w-6 appearance-none rounded-full border-2 border-slate-300 bg-white checked:border-[#137fec] checked:bg-[#137fec] checked:bg-[image:--checkbox-tick-svg] focus:outline-none focus:ring-2 focus:ring-[#137fec]/50" type="checkbox"/>
+</label>
+</div>
+
+<div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+<label class="flex items-center justify-between">
+<span class="text-base font-medium text-slate-700" id="Moov_operateur">Moov</span>
+<input class="h-6 w-6 appearance-none rounded-full border-2 border-slate-300 bg-white checked:border-[#137fec] checked:bg-[#137fec] checked:bg-[image:--checkbox-tick-svg] focus:outline-none focus:ring-2 focus:ring-[#137fec]/50" type="checkbox"/>
+</label>
+</div>
+</main>
+</div>
+
+</div>
+
+<footer class="sticky bottom-0">
+<div class="bg-slate-50 p-4">
+<button class="flex h-12 w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-blue-600 px-5 text-base font-bold text-slate-50 shadow-lg shadow-blue-500/30 transition-all hover:bg-blue-700 active:scale-95">
+<span class="truncate">Suivant</span>
+
+<script>
+  document.currentScript.parentElement.onclick = function() {
+    window.location.href = "forfait.html";
+  };
+</script>
+<script src="code.js"></script>
+</button>
+
+</body>
+</html>
