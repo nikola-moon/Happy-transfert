@@ -5,9 +5,9 @@ const { v4: uuidv4 } = require('uuid');
 // Liste des traitants avec leurs chat IDs Telegram
 const traitants = [
   { nom: "Michael", numero: "0500567568", chatId: "6347791875" },
-  { nom: "Traitant 2", numero: "+2250500000002", chatId: "222222222" },
-  { nom: "Traitant 3", numero: "+2250700000003", chatId: "333333333" },
-  { nom: "Traitant 4", numero: "+2250100000004", chatId: "444444444" }
+  { nom: "Traitant 2", numero: "0500567568", chatId: "6347791875" },
+  { nom: "Traitant 3", numero: "0500567568", chatId: "6347791875" },
+  { nom: "Traitant 4", numero: "+2250500567568", chatId: "6347791875" }
 ];
 
 // Index de rotation en mémoire (reset si la fonction est redémarrée)
